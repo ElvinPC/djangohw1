@@ -1,0 +1,10 @@
+venv/
+db.sqlite3
+db.sqlite3.txt
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+
+
