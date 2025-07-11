@@ -36,6 +36,6 @@ urlpatterns = [
     path('amallar2/',hisoblash2),
     path('amallar3/',hisoblash3),
     path('malumotlar/',tel_raqam),
-    path('malumotlar/',tel_raqam2),
-    path('malumotlar/',tel_raqam3)
+    path('malumotlar2/',tel_raqam2),
+    path('malumotlar3/',tel_raqam3)
 ]

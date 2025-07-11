@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 def tel_raqam(request):
     data ={
         "ism":"Dilmurod",
         "Tel raqam":"+998998009080"
     }
-    return HttpResponse(tel_raqam)
+    return JsonResponse(data)
 
 
 def tel_raqam2(request):
@@ -16,7 +16,7 @@ def tel_raqam2(request):
         "Tel raqam":"+998901231234"
 
     }
-    return HttpResponse(tel_raqam2)
+    return JsonResponse(data)
 
 def tel_raqam3(request):
     data ={
@@ -24,4 +24,4 @@ def tel_raqam3(request):
         "Tel raqam":"+998509784567"
     }
 
-    return HttpResponse(tel_raqam3)
+    return JsonResponse(data)

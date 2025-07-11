@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 
 def hisoblash(request):
@@ -8,7 +8,7 @@ def hisoblash(request):
         "amal": "5 + 3",
         "javob": 5 + 3
     }
-    return HttpResponse(hisoblash)
+    return JsonResponse(hisoblash)
 
 
 def hisoblash2(request):
@@ -16,12 +16,12 @@ def hisoblash2(request):
         "amal": "34*34",
         "javob": 34 * 34
     }
-    return HttpResponse(hisoblash2)
+    return JsonResponse(data)
 def hisoblash3(request):
     data = {
         "amal": "100/100",
         "javob": 100/100
     }
-    return HttpResponse(hisoblash3)
+    return JsonResponse(data)
 
 

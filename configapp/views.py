@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 def ism_qaytaradigan(request):
     data ={
@@ -9,7 +9,7 @@ def ism_qaytaradigan(request):
         "status":"IT programmist",
         "description":"birinchi funksiyadan qaytgan qiymat"
     }
-    return HttpResponse(data)
+    return JsonResponse(data)
 def ism_qaytaradigan2(request):
     date ={
         "id":2,
@@ -17,7 +17,7 @@ def ism_qaytaradigan2(request):
         "status":"bugalter",
         "description": "birinchi funksiyadan qaytgan qiymat"
     }
-    return HttpResponse(date)
+    return JsonResponse(date)
 def ism_qaytaradigan3(request):
     date ={
         "id":3,
@@ -26,5 +26,5 @@ def ism_qaytaradigan3(request):
         "description": "birinchi funksiyadan qaytgan qiymat"
 
     }
-
+    return JsonResponse(date)
 
