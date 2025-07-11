@@ -8,7 +8,7 @@ def hisoblash(request):
         "amal": "5 + 3",
         "javob": 5 + 3
     }
-    return JsonResponse(hisoblash)
+    return JsonResponse(data)
 
 
 def hisoblash2(request):
